@@ -1,0 +1,209 @@
+html {
+    scroll-behavior: smooth;
+}
+body
+{
+    background:#000;
+    margin:0;
+    padding:0;
+    font-family: 'Rubik', sans-serif;
+}
+header{
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #000;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    width: 25%;
+    padding-left: 30px;
+}
+
+.nav-link{
+    width: 75%;
+    padding-right: 50px;
+}
+
+ul{
+    list-style-type: none;
+}
+ul.nav-link-list li {
+    float: right;
+}
+
+ul.nav-link-list a {
+    display: inline;
+    padding: 8px;
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.splash-image{
+    height: 100vh;
+    background-image: url("splash-water.jpg");
+    margin:0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    box-shadow: 0 0 0 0 #ffffff;
+}
+.faint-white{
+    color: #e8e8e8;
+    font-weight: 400;
+    font-size: 18px;
+}
+.drink-more-water{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.mick{
+    margin-left: 200px;
+    margin-top: 300px;
+    z-index: 1;
+    position: absolute;
+}
+.overlay-home{
+    background-color: rgba(35, 39, 40, 0.67);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center center;
+    background-repeat: repeat;
+    z-index: 1;
+}
+
+.login-pop{
+    display: none;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.login-form{
+    max-width: 30%;
+    margin: 200px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.login-form input[type=text], input[type=password] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #e2e2e3;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 30px 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    border-radius: 3px;
+    display: inline;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.dashboard{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    color: #fff;
+}
+
+.dash-sidebar{
+
+    padding: 10px;
+    /*position: fixed;*/
+    width: 30%;
+}
+.dash-main{
+    width: 60%;
+    margin-top: 50px;
+}
+.dash-sidebar-list{
+    margin-top: 50px;
+}
+.dash-sidebar-list a{
+    color: white;
+    padding: 10px;
+    width: 80%;
+    display: block;
+}
+.dash-sidebar-list a:hover{
+    color: green;
+    background-color: #e8e8e8;
+}
+
+.card{
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+}
+.balance-card{
+    width: 35%;
+}
+.transactions-card{
+    /*width: 100%;*/
+    margin-top: 30px;
+}
+ul.transactions-list li{
+    margin: 20px 0;
+}
+.transaction-detail{
+    display: inline-block;
+}
+.transaction-detail b{
+    margin-bottom: 2px;
+    line-height: 1.2;
+    display: block;
+}
+.transaction-detail span{
+    color: #e8e8e8;
+    font-size: 12px;
+}
+.transaction-amount{
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+
+.transfer-input{
+     display: inline-block;
+     margin-right: 50px;
+ }
+
+.transfer-input input[type=text]{
+
+    padding: 8px 20px;
+    margin: 10px 0;
+    border: 1px solid #e2e2e3;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
